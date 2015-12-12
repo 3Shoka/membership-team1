@@ -35,9 +35,11 @@ $this->append_js(array(
 						foreach ($member_socmeds as $socmed_item):
 						?>
 
-						<li style="margin-right: 5px; padding: 3px; border: 1px #DDDDDD solid;">
-							<span class="fa <?php echo $socmedias_logo[$socmed_item['socmed_type']]; ?>"></span>
-							<?php echo filter_var(trim($socmed_item['account_name']), FILTER_SANITIZE_STRING); ?>
+						<li style="margin-right: 5px; padding: 3px; border: none;">
+                            <a href="http://<?php echo filter_var(trim($socmed_item['account_url']), FILTER_SANITIZE_STRING); ?>">
+    							<span class="fa <?php echo $socmedias_logo[$socmed_item['socmed_type']]; ?>"></span>
+    							<?php echo filter_var(trim($socmed_item['account_name']), FILTER_SANITIZE_STRING); ?>
+                            </a>
 						</li>
 
 						<?php

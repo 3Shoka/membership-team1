@@ -1840,3 +1840,9 @@ table th[class*="col-"] {
 table.form-oprek th, table.form-oprek td {
 	vertical-align: middle;
 }
+
+/*by Ashz*/
+
+div.team-details > ul > li > a:hover{
+	color:#000;
+}
